@@ -4,63 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eva Chen - Personal Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Eva Chen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hello, I'm Eva Chen. Welcome to my personal website.</p>
-        <img src="images/profile.jpg" alt="Eva Chen">
-    </section>
+    <main>
+        <!-- Updated hero section -->
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a Computer Science major with a passion for technology and innovation.</p>
-    </section>
+        <section id="home" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <br>
+                        <br>
+                        <h2>About Me</h2>
+                        <p>Hi guy! <br>
+                            
+                            <br>I'm Yu-Ning, a Computer Science student at the University of Washington with a passion for back-end engineering, Core OS, and web development. As a dedicated junior, my strong academic background and intense interest in technology make me an excellent choice for innovative and cutting-edge teams. Skilled in Java, C/C++, and Python, I am continually enhancing my current skill set while proactively exploring new programming languages and frameworks.<br>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download>Download My Resume</a>
-    </section>
+                            <br>My growing mastery of data structures and algorithms reflects my commitment to deepening my understanding of essential computer science principles. This commitment, combined with my adaptability, prepares me to effectively navigate and contribute to the ever-evolving field of software engineering.<br>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-                <a href="https://github.com/yourusername/project1">View on GitHub</a>
-            </li>
-        </ul>
-    </section>
+                            <br>I am driven to tackle new challenges and improve user experiences, making me an indispensable asset in any software engineering role. I am particularly drawn to environments that champion teamwork and ingenuity, where I can offer novel insights and make significant contributions to technological advancements.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <br>
+                        <br>
+                        <img src="images/eva.jpg" alt="Eva Chen" class="img-fluid rounded-circle profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="mailto:eva@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <section id="Experiences" class="py-5">
+            <div class="container">
+                <div class="Experiences-content mt-5">
+                    <h4>Job Experiences</h4>
+                    <ul>
+                        <li>
+                            <strong>Computer Science Tutor</strong>, Student Learning Center, Jul. 2022 - Mar. 2023<br>
+                            Tutored 15 students weekly in Java and computer science, boosting grades by up to 10% with custom lesson plans.<br>
+                            Led Object Oriented Programming reviews in classes, enhancing students' analytical and coding efficiency.
+                        </li>
+                        <li>
+                            <strong>Math Tutor</strong>, Student Learning Center, Jul. 2022 - Mar. 2023<br>
+                            Tailored lessons for 20 students weekly in Algebra, Geometry, Trigonometry, Calculus, and Statistics, boosting comprehension and grades.<br>
+                            Elevated student exam scores by an average of 25%, fast-tracking many to advanced math courses.
+                        </li>
+                    </ul>
 
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> and <a href="https://github.com/yourusername">GitHub</a>.</p>
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li>Languages: Java, Python, C++, C, HTML/CSS, JavaScript, Swift, TypeScript, SQL</li>
+                        <li>Developer Tools: IntelliJ IDEA, GitHub, GitLab, Linux, Xcode, Swift Package Manager, Visual Studio, VS Code</li>
+                        <li>Technologies/Frameworks: React.js, Node.js, Express.js, Bootstrap, MFC, SwiftUI, Firebase, Cloud Firestore</li>
+                    </ul>
+
+                    <h4>Honors, Activities, and Other Skills</h4>
+                    <ul>
+                        <li>Named to the Dean's List for all quarters, Sep. 2021 - Mar. 2023</li>
+                        <li>Named to the President's List for 4 quarters, Jan. 2022 - Mar. 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Projects</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Foodie's Recipe Hub</h5>Sep. 2023 - Nov. 2023<br>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Constructed a responsive web app that allows users to share their favorite recipes.<br></li>
+                                        <li>Designed and implemented an interactive front-end UI with React.js, Bootstrap, HTML, and CSS for dynamic user experiences and efficient state management.<br></li>
+                                        <li>Created a RESTful API web server with Node.js, Express and persisted data in a MongoDB database.<br></li>
+                                        <li>Applied Passport JS for user authentication increasing security while maintaining usability.</li>
+                                    </ul>
+                                </p>
+                                <a href="https://github.com/evachen12/Foodies-Recipe-Hub" class="btn btn-primary">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Media App</h5>May 2022 - Sep. 2022<br>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Developed core features for a social media app: user authentication, post interactions, and notifications.<br></li>
+                                        <li>Utilized SwiftUI for front-end development and MVVM architectural patterns for efficient, maintainable code structure.<br></li>
+                                        <li>Integrated with Firebase for backend services, including Cloud Firestore for data management, user authentication, and image storage.</li>
+                                    </ul>
+                                </p>
+                                <a href="https://github.com/evachen12/Social-Media-App" class="btn btn-primary">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Uno Game</h5>Sep. 2020 - Jan. 2021<br>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Developed a digital UNO game in C++ with MFC, featuring engaging multiplayer gameplay and realistic game logic to mirror actual player dynamics.<br></li>
+                                        <li>Implemented Dynamic Link Libraries (DLLs) for modular, reusable code, enhancing the game’s architecture, maintainability, and ease of future updates.<br></li>
+                                        <li>Engineered an AI for single-player mode using heuristic algorithms, creating challenging, human-like opponents to enhance solo gameplay experience.</li>
+                                    </ul>
+                                </p>
+                                <a href="https://github.com/evachen12/Uno-Game" class="btn btn-primary">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section with less space and single line -->
+        <section id="contact" class="py-3 bg-dark text-light">
+            <div class="container">
+                <h2 class="text-center">Contact</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-around contact-info flex-wrap">
+                            <div class="p-2">
+                                <i class="fas fa-phone"></i> Phone: 206-535-5848
+                            </div>
+                            <div class="p-2">
+                                <i class="fas fa-envelope"></i> Email: ynchen@uw.com
+                            </div>
+                            <div class="p-2">
+                                <i class="fas fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/ynchen-eva/" class="text-white">linkedin.com/in/ynchen-eva</a>
+                            </div>
+                            <div class="p-2">
+                                <i class="fas fa-github"></i> GitHub: <a href="https://github.com/evachen12" class="text-white">github.com/evachen12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Connect with me on <a href="https://www.linkedin.com/in/ynchen-eva/" class="text-blue">LinkedIn</a> and <a href="https://github.com/evachen12" class="text-blue">GitHub</a>.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

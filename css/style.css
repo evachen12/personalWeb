@@ -1,40 +1,139 @@
+/* Basic body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+/* Navbar brand styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-nav ul {
-    list-style: none;
+/* Hero section styles */
+.hero-section {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
 }
 
-nav ul li {
-    margin: 0 1rem;
+/* Profile image styles */
+.profile-img {
+    width: 10px;  /* Smaller width */
+    height: 10px; /* Smaller height */
+    border-radius: 50%; /* Make the image circular */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+/* Background colors */
+.bg-primary {
+    background-color: #007bff !important;
 }
 
-section {
-    padding: 2rem;
-    text-align: center;
+.bg-success {
+    background-color: #28a745 !important;
 }
 
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Padding styles */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center !important;
+}
+
+/* Image fluid styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rounded corners */
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+/* Button primary styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Card styles */
+.card {
+    border: none;
+}
+
+/* Card image styles */
+.card img {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+/* Card title styles */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Card body styles */
+.card-body {
+    background-color: #fff;
+}
+
+/* Footer styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Link hover styles */
+a.text-white:hover {
+    color: #ddd !important;
+}
+
+/* Contact info styles */
+.contact-info div {
+    margin: 0 10px; /* Less spacing */
+    text-align: center;
+}
+
+.contact-info a {
+    color: blue; /* Link color blue */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* List group item styles */
+.list-group-item {
+    font-size: 1.1rem;
+}
+
+.list-group-item a {
+    color: #007bff;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
 }
